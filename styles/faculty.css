@@ -1,0 +1,47 @@
+.faculty {
+    position: relative;
+}
+.faculty_content {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+}
+
+.faculty_content h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.content_container {
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    border: 1px solid var(--color-gold);
+    box-shadow: 0px 0px 5px 2px var(--color-gold-variant);
+    background-color: var(--color-gold-variant);
+    padding: 2rem;
+    margin: 4rem;
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*  */
+
+@media screen and (max-width: 1200px) {
+    .content_container {
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content_container {
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,148 @@
+.contact_container .banner {
+    width: 100%;
+    height: 250px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.contact_container .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner_title {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    color: var(--color-gold);
+}
+.contact {
+    position: relative;
+}
+.contact_content {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+}
+
+.contact_content h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.content_container {
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: auto 60%;
+    gap: 2rem;
+    padding: 2rem;
+    padding: 2rem;
+    margin: 1rem;
+}
+.content:first-child {
+    border: 1px solid var(--color-gold);
+}
+.content form {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+.content form input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    height: 3rem;
+    background-color: var(--color-gold-variant);
+    border: 1px solid var(--color-gold);
+    color: #fff;
+}
+.content form textarea {
+    resize: none;
+    height: 300px;
+}
+
+.send_btn {
+    margin: 20px 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    color: var(--color-gold);
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.send_btn:hover {
+    background-color: var(--color-primary-variant);
+}
+
+.content:first-child {
+    background-color: var(--color-gold-variant);
+    box-shadow: 0px 0px 5px 2px var(--color-gold-variant);
+}
+
+.content .ics_logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .title {
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-gold);
+}
+
+.content .ics_logo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+.content .contact_info {
+    margin: 1.5rem;
+}
+
+.content .contact_info p {
+    font-size: 1rem;
+}
+
+.content .contact_info h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.content .contact_info a {
+    color: var(--color-gold);
+}
+
+.map {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+/*  */
+
+@media screen and (max-width: 1200px) {
+    .content_container {
+        margin: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content_container {
+        margin: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
